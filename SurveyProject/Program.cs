@@ -9,13 +9,13 @@ namespace SurveyProject
             Survey survey = new Survey("My Survey");
 
             TextQuestion question1 = new TextQuestion { Label = "Where are you from?" };
-            TextQuestion question2 = new TextQuestion { Label = "Where do you live?" };
+            TextQuestion question2 = new TextQuestion { Label = "In Which city do you live?" };
 
             survey.AddQuestion(question1);
             survey.AddQuestion(question2);
 
             int surveyScore = survey.GetScore();
-            
+
             Console.WriteLine($"Your score: {surveyScore}");
         }
     }
